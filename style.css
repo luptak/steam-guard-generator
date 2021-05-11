@@ -1,0 +1,160 @@
+* {box-sizing: border-box;}
+html {overflow: hidden;}
+body {
+	margin: 0; padding: 0; overflow: hidden; width: 250px;
+	cursor: default;
+	font-family: Segoe UI, Arial; font-size: 14px;
+}
+div {position: relative;}
+
+.cf {
+	clear: both;
+	display: block;
+}
+.screen {height: 0; padding: 0; overflow: hidden; border-radius: 3px;transition: height .3s, opacity .3s;}
+
+body[screen="no-account"] .no-account {height: 150px;}
+.no-account {
+	line-height: 150px; text-align: center;
+	font-size: 17px;
+	background: radial-gradient(ellipse, #1B2838, #192331);
+	color: #FFFFFF;
+	cursor: pointer;
+	white-space: nowrap;
+}
+.no-account:hover {opacity: .98;}
+
+body[screen="add-account"] .add-account {height: 148px;padding-bottom: 10px;}
+.add-account {
+	background: #192331;
+}
+.account-btns {background: radial-gradient(circle farthest-side at 50% 50%, #192331, #131B26);}
+.account-btns .btn {
+	line-height: 30px; padding: 0 10px; width: 49%;
+	transition: .3s; cursor: pointer;
+	border-radius: 3px 3px 0 0;
+	text-align: right;
+	background: #192331;
+	color: #FFFFFF;
+	float: right;
+	box-sizing: border-box;
+}
+.account-btns .btn:hover {
+	opacity: 1; background: none; color: #FFFFFF; padding: 0 15px;
+}
+.account-btns .save-account {text-align: left; float: left;}
+.input-group {padding: 5px 10px 0;}
+.input-group span {color: #FFFFFF; margin-bottom: 5px; display: inline-block;}
+.input-group input {
+	outline: none;
+	box-sizing: border-box;
+	width: 100%;
+	display: block;
+	border: 1px solid #FFFFFF;
+	padding: 4px;
+	border-radius: 3px;
+}
+.input-group.btns * {padding-top: 10px; text-align: center; cursor: pointer;color: #FFFFFF; transition: .3s;}
+.delete-account-btn:hover {color: red;}
+.promote-account-btn:hover {color: blue;}
+
+.input-group .help-btn {
+	float: right;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 11px;
+    font-size: 10px;
+    color: #FFFFFF;
+    margin-top: 5px;
+    transition: .3s;
+    cursor: pointer;
+}
+.input-group .help-btn:hover {
+	color: #D5D5D5;
+	border-color: #D5D5D5;
+}
+
+.help-block {
+	display: none;
+    padding: 3px;
+    margin: 5px 0 0;
+    color: #000000;
+    border-radius: 3px;
+    border: 1px solid #d6d6d6;
+    background: #e4e4e4;
+    font-size: 12px;
+}
+
+body[screen="steamguard"] .steamguard {height: 150px;}
+.steamguard {
+	
+}
+
+.list-accounts {
+	max-height: 350px;
+	overflow-y: auto;
+}
+.list-accounts::-webkit-scrollbar {
+    /* border-radius: 5px; */
+    width: 7px;
+	background: #11161D	;
+    border-left: 1px solid #11161D;
+    border-right: 1px solid #11161D;
+}
+.list-accounts::-webkit-scrollbar-button {
+    height: 0;
+}
+.list-accounts::-webkit-scrollbar-thumb {
+    /* border-radius: 5px; */
+    width: 3px;
+    background: #11161D;
+    border-left: 1px solid #11161D;
+    border-right: 1px solid #11161D;
+}
+
+.account {
+	height: 50px;
+	background: #131B26;
+	color: #FFFFFF;
+}
+.account:nth-child(odd) {background: #131B26;}
+
+.account .title {line-height: 50px; padding: 0 10px; float: left; font-size: 15px; cursor: pointer; z-index: 1;}
+.account .code {line-height: 50px; padding: 0 10px; font-size: 15px; text-align: right;color: #FFFFFF;}
+.account .code span {cursor: pointer;}
+
+.steamguard>.account {
+	height: 150px;
+	background: radial-gradient(ellipse, #192331, #192331);
+}
+.steamguard>.account .title {
+	cursor: default;
+	line-height: 40px;
+	padding: 0 10px; position: absolute; top: 0; left: 0;
+	background: rgba(0,0,0,.2);
+	border-radius: 3px 0 5px 0;
+}
+.steamguard>.account .code {
+	padding-top: 64px; font-size: 50px; text-align: center;
+}
+.steamguard>.account .edit-btn {
+	height: 40px; width: 40px; position: absolute; top: 0; right: 0; z-index: 1;
+	background: rgba(0,0,0,.2);
+	background-image: url(/img/edit.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 0 3px 0 5px;
+	cursor: pointer;
+	transition: .3s;
+}
+.steamguard>.account .edit-btn:hover {background-color: rgba(0,0,0,.4);}
+
+.add-account-btn {
+	line-height: 50px; height: 50px!important; text-align: center; font-size: 15px;
+	transition: .3s; cursor: pointer;
+	border-radius: 0 0 3px 3px;
+}
+.add-account-btn:hover {opacity: .8;}

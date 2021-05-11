@@ -1,0 +1,36 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "__MSG_extName__",
+  "version": "1.5",
+  "manifest_version": 2,
+  "description": "__MSG_extDesc__",
+  "default_locale": "en",
+  "browser_action": {
+    "default_icon": {
+      "19": "ba-icon19.png"
+    },
+    "default_title": "__MSG_extName__",
+    "default_popup": "main.html"
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "background":{
+    "scripts":["js/buffer.js", "js/crypto.js", "js/bg.js"]
+  },
+  "web_accessible_resources": [
+    "img/login.png",
+    "page.css",
+    "js/page.js"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://steamcommunity.com/login/*", "https://steamcommunity.com/openid/*"],
+      "js": ["js/jquery.js", "js/page.js"],
+      "css": ["page.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": ["storage"]
+}

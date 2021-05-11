@@ -1,0 +1,46 @@
+{
+	"extName" : {
+		"message": "Lupi's Steam Guard Generator",
+		"description": ""
+	},
+	"extDesc" : {
+		"message": "Steam Guard mobile authenticator codes in your browser using a login name and shared_secret.",
+		"description": ""
+	},
+	"addAccount" : {
+		"message": "Add account",
+		"description": ""
+	},
+	"deleteAccount" : {
+		"message": "Delete account",
+		"description": ""
+	},
+	"promoteAccount" : {
+		"message": "Show first",
+		"description": ""
+	},
+	"cancel" : {
+		"message": "Cancel",
+		"description": ""
+	},
+	"save" : {
+		"message": "Save",
+		"description": ""
+	},
+	"title" : {
+		"message": "Name",
+		"description": ""
+	},
+	"noname" : {
+		"message": "Noname",
+		"description": ""
+	},
+	"helpLogin" : {
+		"message": "Enter your Steam login name here to paste the authorization code on the site in one click.",
+		"description": ""
+	},
+	"helpSecret" : {
+		"message": "You can get the shared_secret code from the mobile device on which your Steam Guard is installed.",
+		"description": ""
+	}
+}

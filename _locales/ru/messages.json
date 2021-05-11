@@ -1,0 +1,46 @@
+{
+	"extName" : {
+		"message": "SteamGuard Авторизатор",
+		"description": ""
+	},
+	"extDesc" : {
+		"message": "Коды авторизации мобильного аутентификатора SteamGuard прямо в браузере!",
+		"description": ""
+	},
+	"addAccount" : {
+		"message": "Добавить аккаунт",
+		"description": ""
+	},
+	"deleteAccount" : {
+		"message": "Удалить аккаунт",
+		"description": ""
+	},
+	"promoteAccount" : {
+		"message": "Показывать первым",
+		"description": ""
+	},
+	"cancel" : {
+		"message": "Отмена",
+		"description": ""
+	},
+	"save" : {
+		"message": "Сохранить",
+		"description": ""
+	},
+	"title" : {
+		"message": "Имя",
+		"description": ""
+	},
+	"noname" : {
+		"message": "Безымянный",
+		"description": ""
+	},
+	"helpLogin" : {
+		"message": "Введите сюда свой логин Steam, чтобы в один клик вводить код авторизации на сайте",
+		"description": ""
+	},
+	"helpSecret" : {
+		"message": "Код shared_secret можно получить с мобильного устройства, на котором установлен ваш SteamGuard.<br>Для устройств на android требуются права root.<br>На WindowsPhone получить shared_secret невозможно.<br>За подробной инструкцией обратитесь в гугл:<br><a href=\"http://google.ru/search?q=как получить shared_secret\" target=\"_blank\">как получить shared_secret</a>",
+		"description": ""
+	}
+}
